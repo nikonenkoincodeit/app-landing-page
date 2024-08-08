@@ -1,0 +1,149 @@
+.header {
+    padding-top: 3.75rem;
+    margin-bottom: -130px;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu,
+.header-left-col {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.menu-link {
+    color: var(--color-text-secondary);
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+.hero {
+    padding-top: 13.25rem;
+    padding-bottom: 7rem;
+    background: url(../img/lines.webp) no-repeat top left,
+        url(../img/hero-bg.webp) no-repeat top center,
+        url(../img/hero-line.webp) no-repeat bottom center;
+    background-size: 50% auto, contain, contain;
+}
+
+.container-hero {
+    display: flex;
+    justify-content: center;
+    gap: 13.5rem;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 6rem;
+    width: 337px;
+}
+
+.hero-title {
+    color: var(--color-text-secondary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.hero-subtitle {
+    color: #d2d0d0;
+    font-size: 1.25rem;
+}
+
+.btn-download {
+    color: #f9f8f8;
+    background: #6727ad;
+}
+
+.gallery {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 1.125rem;
+    min-height: 20.5rem;
+}
+
+.about-card {
+    padding: 2rem 1.25rem 1.5rem;
+    &:hover .card-w-link {
+        max-height: 100px;
+    }
+    &:hover .card-title {
+        color: #771ccb;
+    }
+}
+
+.about-card-icon {
+    fill: #3d2e87;
+    margin-bottom: 1.125rem;
+}
+
+.card-title {
+    color: #000079;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    transition: color 0.5s ease-in-out;
+}
+
+.card-description {
+    font-size: 1.125rem;
+    color: #9b96bc;
+    line-height: 1.44;
+    min-height: 4.8125rem;
+}
+
+.card-w-link {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.btn-learn-more,
+.card-link {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    margin-top: 3.1rem;
+    color: #000079;
+    font-size: 1.125rem;
+}
+
+.features-content {
+    width: 23.9rem;
+}
+
+.features-title {
+    color: #3d2e87;
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.features-description {
+    color: #9b96bc;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-learn-more {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+}
+
+.features {
+    background: url(../img/union.webp) no-repeat top right,
+        url(../img/features-bg.webp) no-repeat top center;
+    background-size: 30%, 100% 90%;
+}
+
+.container-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

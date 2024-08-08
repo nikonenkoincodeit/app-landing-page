@@ -1,0 +1,39 @@
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn {
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 22px;
+    box-shadow: 5px 1px 40px 5px rgba(0, 0, 0, 0.12);
+    background: rgb(255, 255, 255);
+}
+
+svg {
+    fill: currentColor;
+}
