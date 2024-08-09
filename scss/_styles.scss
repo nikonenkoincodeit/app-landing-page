@@ -6,7 +6,7 @@
 
 .header {
     padding-top: 3.75rem;
-    margin-bottom: -130px;
+    margin-bottom: -8.125rem;
 }
 .container-header {
     display: flex;
@@ -36,7 +36,7 @@
 
 .hero-card-top,
 .hero-card-bottom {
-    border-radius: 17px;
+    border-radius: 1rem;
     position: absolute;
     left: 4rem;
 }
@@ -93,7 +93,7 @@
 }
 
 .hero-card-bottom-value {
-    color: #6d22bb;
+    color: var(--color-text-accent1);
     font-size: 0.875rem;
     font-weight: 500;
     position: absolute;
@@ -105,7 +105,7 @@
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 50%;
-        background: #7026b4;
+        background: var(--color-bg-accent1);
         top: 50%;
         transform: translateY(-50%);
         left: -0.6rem;
@@ -121,7 +121,7 @@
 .hero-content {
     text-align: center;
     margin-top: 6rem;
-    width: 337px;
+    width: 21.0625rem;
 }
 
 .hero-title {
@@ -161,7 +161,7 @@
 .about-card {
     padding: 2rem 1.25rem 1.5rem;
     &:hover .card-w-link {
-        max-height: 100px;
+        max-height: 6.25rem;
     }
     &:hover .card-title {
         color: #771ccb;
@@ -169,12 +169,12 @@
 }
 
 .about-card-icon {
-    fill: #3d2e87;
+    fill: var(--color-text-accent2);
     margin-bottom: 1.125rem;
 }
 
 .card-title {
-    color: #000079;
+    color: var(--color-text-accent3);
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1.75rem;
@@ -183,7 +183,7 @@
 
 .card-description {
     font-size: 1.125rem;
-    color: #9b96bc;
+    color: var(--color-text-muted);
     line-height: 1.44;
     min-height: 4.8125rem;
 }
@@ -200,7 +200,7 @@
     align-items: center;
     gap: 1.4rem;
     margin-top: 3.1rem;
-    color: #000079;
+    color: var(--color-text-accent3);
     font-size: 1.125rem;
 }
 
@@ -210,14 +210,14 @@
 }
 
 .section-title {
-    color: #3d2e87;
+    color: var(--color-text-accent2);
     font-size: 2.25rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
 .section-description {
-    color: #9b96bc;
+    color: var(--color-text-muted);
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
@@ -247,7 +247,7 @@
 
 .features-card {
     padding: 2.5rem 2rem;
-    border-radius: 23px;
+    border-radius: 1.5rem;
     background: linear-gradient(
         133.55deg,
         rgb(249, 248, 250) 21.197%,
@@ -295,7 +295,7 @@
 
 .features-card-value {
     position: absolute;
-    color: #6d22bb;
+    color: var(--color-text-accent1);
     left: 3rem;
     bottom: 1rem;
     font-size: 1.375rem;
@@ -306,7 +306,7 @@
         width: 0.625rem;
         height: 0.625rem;
         border-radius: 50%;
-        background: #7026b4;
+        background: var(--color-bg-accent1);
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
@@ -334,14 +334,14 @@
     margin-bottom: 1.875rem;
 }
 .features-card-text {
-    color: #3b0e90;
+    color: var(--color-text-highlight);
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 0.5rem;
 }
 .features-card-num {
-    color: #3b0e90;
+    color: var(--color-text-highlight);
     font-size: 1.375rem;
     font-weight: 500;
     line-height: 1.1;
@@ -408,7 +408,7 @@
     height: 17.4rem;
     width: 94%;
     margin: 0 auto;
-    border-radius: 17px;
+    border-radius: 1rem;
     background: linear-gradient(
         180deg,
         rgb(80, 46, 156) 2.298%,
@@ -417,7 +417,7 @@
 }
 
 .blog-body {
-    max-width: 1440px;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -451,8 +451,8 @@
     height: 4.375rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #fff;
-    background: #fff;
+    border: 4px solid var(--color-bg-secondary, #fff);
+    background: var(--color-bg-secondary, #fff);
     position: absolute;
     left: 3rem;
     top: 0;
@@ -545,7 +545,7 @@
     margin: 0 auto;
     font-size: 1.625rem;
     letter-spacing: -6%;
-    color: #9b96bc;
+    color: var(--color-text-muted);
     margin-bottom: 7.9rem;
 }
 
@@ -553,7 +553,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    height: 530px;
+    height: 33.125rem;
 }
 
 .pricing-card {
@@ -566,7 +566,7 @@
         padding: 6rem 2.75rem;
     }
     &:hover .btn-purchase {
-        color: #fff;
+        color: var(--color-text-secondary, #fff);
         background: #61559e;
     }
     &:hover .pricing-card-subtitle {
@@ -597,7 +597,7 @@
     margin-bottom: 1.375rem;
 }
 .pricing-card-description {
-    color: #9b96bc;
+    color: var(--color-text-muted);
     font-size: 1.125rem;
     line-height: 1.77;
     margin-bottom: 3.25rem;
@@ -605,10 +605,10 @@
 
 .btn-purchase {
     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-    border: 1px solid #9b96bc;
+    border: 1px solid var(--color-text-muted);
     border-radius: 1.5rem;
     font-size: 1.125rem;
-    background: #fff;
+    background: var(--color-bg-secondary, #fff);
     padding: 0.5rem 4rem;
     color: #544993;
 }
@@ -619,7 +619,7 @@
 
 .container-banner {
     padding: 4rem 2rem;
-    border-radius: 17px;
+    border-radius: 1rem;
     background: linear-gradient(
         175.43deg,
         rgb(61, 46, 135) 4.848%,
@@ -629,12 +629,12 @@
 
 .content-banner {
     text-align: center;
-    width: 500px;
+    width: 31.25rem;
     margin: 0 auto;
 }
 
 .banner-title {
-    color: #fff;
+    color: var(--color-text-secondary, #fff);
 }
 
 .btn-banner {
@@ -680,7 +680,7 @@
 }
 
 .footer-column-title {
-    color: #6800c9;
+    color: var(--color-text-vivid);
     font-size: 1.125rem;
     margin-bottom: 1rem;
 }
@@ -691,7 +691,7 @@
 }
 
 .footer-link {
-    color: #265b83;
+    color: var(--color-text-info);
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -708,7 +708,7 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    color: #6800c9;
+    color: var(--color-text-vivid);
 }
 
 .selected-option {
@@ -717,18 +717,18 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #265b83;
+    color: var(--color-text-info);
 }
 
 .options-list {
     top: 100%;
     margin: 5px 0 0 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 0.6rem;
     display: none;
     position: absolute;
     width: 100%;
-    background-color: #fff;
+    background: var(--color-bg-secondary, #fff);
     z-index: 1;
 }
 
@@ -737,9 +737,9 @@
 }
 
 .option {
-    padding: 10px;
+    padding: 0.625rem;
     border-bottom: 1px solid #eee;
-    color: #265b83;
+    color: var(--color-text-info);
 }
 
 .option:last-child {
@@ -747,7 +747,7 @@
 }
 
 .option:hover {
-    background-color: #f0f0f0;
+    background: #f0f0f0;
 }
 
 .icon-t {
