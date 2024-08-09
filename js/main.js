@@ -19,3 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 })
+
+$('.blog-gallery').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    arrows: false,
+    adaptiveHeight: true,
+})
+
+$('.btn-arrow-left').on('click', function () {
+    $('.blog-gallery').slick('slickPrev')
+})
+
+$('.btn-arrow-right').on('click', function () {
+    $('.blog-gallery').slick('slickNext')
+})
