@@ -1,36 +1,36 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const languageSelector = document.querySelector('.language-selector')
-    const selectedOption = document.querySelector('.selected-option')
-    const optionsList = document.querySelector('.options-list')
+$(document).ready(function () {
+    const $languageSelector = $('.language-selector')
+    const $selectedOption = $('.selected-option')
+    const $optionsList = $('.options-list')
 
-    selectedOption.addEventListener('click', function (event) {
-        languageSelector.classList.toggle('active')
+    $selectedOption.on('click', function (event) {
+        $languageSelector.toggleClass('active')
         event.stopPropagation()
     })
 
-    document.addEventListener('click', function () {
-        languageSelector.classList.remove('active')
+    $(document).on('click', function () {
+        $languageSelector.removeClass('active')
     })
 
-    optionsList.addEventListener('click', function (event) {
-        if (event.target && event.target.matches('li.option')) {
-            selectedOption.textContent = event.target.textContent
-            languageSelector.classList.remove('active')
-        }
+    $optionsList.on('click', 'li.option', function (event) {
+        $selectedOption.text($(this).text())
+        $languageSelector.removeClass('active')
     })
-})
 
-$('.blog-gallery').slick({
-    centerMode: true,
-    slidesToShow: 3,
-    arrows: false,
-    adaptiveHeight: true,
-})
+    const $blog = $('.blog-gallery')
 
-$('.btn-arrow-left').on('click', function () {
-    $('.blog-gallery').slick('slickPrev')
-})
+    $blog.slick({
+        centerMode: true,
+        slidesToShow: 3,
+        arrows: false,
+        adaptiveHeight: true,
+    })
 
-$('.btn-arrow-right').on('click', function () {
-    $('.blog-gallery').slick('slickNext')
+    $('.btn-arrow-left').on('click', function () {
+        $blog.slick('slickPrev')
+    })
+
+    $('.btn-arrow-right').on('click', function () {
+        $blog.slick('slickNext')
+    })
 })

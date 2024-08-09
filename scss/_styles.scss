@@ -1,3 +1,9 @@
+.page {
+    background: url(../img/footer-ellipse.webp) no-repeat,
+        url(../img/about-ellipse.webp) no-repeat;
+    background-position: 25% 122%, 5% 12%;
+}
+
 .header {
     padding-top: 3.75rem;
     margin-bottom: -130px;
@@ -247,6 +253,19 @@
         rgb(249, 248, 250) 21.197%,
         rgb(220, 199, 241) 94.082%
     );
+    &:first-child {
+        width: 16rem;
+    }
+    &:first-child::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 3.75rem;
+        top: 0;
+        left: -3.75rem;
+        background: url(../img/part-card.webp) no-repeat center;
+        background-size: cover;
+    }
 }
 
 .features-card-bg {
@@ -472,8 +491,6 @@
     color: #7871a7;
 }
 
-////@at-root
-
 .blog-card-title {
     color: rgba(110, 30, 186, 0.37);
     font-size: 1.125rem;
@@ -498,8 +515,6 @@
     line-height: 1.75;
 }
 
-///
-
 .stars-list {
     display: flex;
     gap: 0.6rem;
@@ -511,6 +526,13 @@
         background: transparent;
         color: #2c0e85;
     }
+}
+
+.pricing {
+    padding-bottom: 8rem;
+    background: url(../img/ellipse.webp) no-repeat;
+    background-position: top 150px center;
+    background-size: cover;
 }
 
 .pricing-description,
@@ -589,6 +611,10 @@
     background: #fff;
     padding: 0.5rem 4rem;
     color: #544993;
+}
+
+.banner {
+    padding-top: 0;
 }
 
 .container-banner {
@@ -682,7 +708,7 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    user-select: none;
+    color: #6800c9;
 }
 
 .selected-option {

@@ -382,6 +382,11 @@ svg {
   fill: currentColor;
 }
 
+.page {
+  background: url(../img/footer-ellipse.webp) no-repeat, url(../img/about-ellipse.webp) no-repeat;
+  background-position: 25% 122%, 5% 12%;
+}
+
 .header {
   padding-top: 3.75rem;
   margin-bottom: -130px;
@@ -669,6 +674,19 @@ svg {
   border-radius: 23px;
   background: linear-gradient(133.55deg, rgb(249, 248, 250) 21.197%, rgb(220, 199, 241) 94.082%);
 }
+.features-card:first-child {
+  width: 16rem;
+}
+.features-card:first-child::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3.75rem;
+  top: 0;
+  left: -3.75rem;
+  background: url(../img/part-card.webp) no-repeat center;
+  background-size: cover;
+}
 
 .features-card-bg {
   width: 20.8rem;
@@ -955,6 +973,13 @@ svg {
   color: #2c0e85;
 }
 
+.pricing {
+  padding-bottom: 8rem;
+  background: url(../img/ellipse.webp) no-repeat;
+  background-position: top 150px center;
+  background-size: cover;
+}
+
 .pricing-description,
 .pricing-title {
   text-align: center;
@@ -1038,6 +1063,10 @@ svg {
   background: #fff;
   padding: 0.5rem 4rem;
   color: #544993;
+}
+
+.banner {
+  padding-top: 0;
 }
 
 .container-banner {
@@ -1145,10 +1174,7 @@ svg {
           align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  color: #6800c9;
 }
 
 .selected-option {
